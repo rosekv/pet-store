@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="smoke" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+    <test name="smoketest" annotations="JDK" preserve-order="true">
+        <groups>
+            <run>
+                <include name="Functional" />
+
+            </run>
+        </groups>
+        <classes>
+
+            <class name="petstore.PetStoreTests"></class>
+        </classes>
+    </test>
+</suite>
