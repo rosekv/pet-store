@@ -1,10 +1,14 @@
+package petstore;
 
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 public class PetStoreTests {
 
@@ -37,17 +41,18 @@ public class PetStoreTests {
 
 
     public String[] configuration() throws IOException {
-        String petBaseUri;
+		
+		String petBaseUri;
 
-        //This section required when the inputs are given through config files and disable the enabled section
-        /*
+        //This section required when the inputs are given through config files
+		/*
         Properties properties = new Properties();
-
+        String petBaseUri;
         String basePath = new File("src/main/resources/config-petstore.properties").getAbsolutePath();
         FileInputStream fileInputStream = new FileInputStream(basePath);
         properties.load(fileInputStream);
         petBaseUri = properties.getProperty("PETSTOREURI");
-      */
+		*/
 
         petBaseUri = System.getenv("PETSTOREURI");
 
