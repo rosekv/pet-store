@@ -5,6 +5,7 @@
         <groups>
             <run>
                 <include name="Functional" />
+                <include name="UseCase" />
 
             </run>
         </groups>
