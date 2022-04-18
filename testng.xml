@@ -10,7 +10,6 @@
             </run>
         </groups>
         <classes>
-
             <class name="petstore.PetStoreTests"></class>
         </classes>
     </test>
