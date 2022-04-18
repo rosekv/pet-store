@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>AuthNTests</artifactId>
+    <artifactId>PetStoreTests</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -107,5 +107,13 @@
             <version>6.14.3</version>
             <scope>compile</scope>
         </dependency>
+		
+		<dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+		
          </dependencies>
 </project>

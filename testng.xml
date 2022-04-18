@@ -4,9 +4,9 @@
     <test name="smoketest" annotations="JDK" preserve-order="true">
         <groups>
             <run>
-                <include name="Functional" />
-                <include name="UseCase" />
-
+                <include name="Functional"/>
+                <include name="UseCase"/>
+                <include name="Security"/>
             </run>
         </groups>
         <classes>
