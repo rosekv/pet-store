@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
-            <plugin>
+           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
@@ -28,9 +28,11 @@
                         <trimStackTrace>false</trimStackTrace>
                       <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                      </suiteXmlFiles>
-                    </configuration>
-                </plugin>
+                    </suiteXmlFiles>
+                    <testFailureIgnore>true</testFailureIgnore>
+
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -40,6 +42,7 @@
     </properties>
 
     <dependencies>
+
 
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
@@ -107,13 +110,7 @@
             <version>6.14.3</version>
             <scope>compile</scope>
         </dependency>
-		
-		<dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
-		
-         </dependencies>
+
+
+    </dependencies>
 </project>

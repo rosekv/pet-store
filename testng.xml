@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="smoke" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
-    <test name="smoketest" annotations="JDK" preserve-order="true">
+<suite name="regression" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+    <test name="petstoretests" annotations="JDK" preserve-order="true">
         <groups>
             <run>
                 <include name="Functional"/>
